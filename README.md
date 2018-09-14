@@ -1071,7 +1071,18 @@ For Bonsai:
 
 ```sh
 heroku addons:create bonsai
-heroku config:set ELASTICSEARCH_URL=`heroku config:get BONSAI_URL`
+```
+
+Get the BONSAI_URL value with:
+
+```sh
+heroku config:get BONSAI_URL
+```
+
+And set the ELASTICSEARCH_URL value with the same value:
+
+```sh
+heroku config:set ELASTICSEARCH_URL="INSERT YOUR BONSAI_URL VALUE HERE"
 ```
 
 For Elastic Cloud (previously Found):
